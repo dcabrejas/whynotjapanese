@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WKZ8BL9');</script>
+        <!-- End Google Tag Manager -->
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="{{ asset_url('css/bootstrap.min.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset_url('css/core.css?ver=2.0.0') }}" />
+
+        <meta name="keywords" content="japanese, learning, teacher, teaching, learn, nursing, language, nottingham, online, japanese teacher" />
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset_url('img/favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="96x96" href="{{ asset_url('img/favicon-96x96.png') }}">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+        <meta name="Description" content="{% block meta_description %}{% endblock %}">
+        <title>{% block title %}{% endblock %} | Why not Japanese | Japanese Teacher | Online</title>
+    </head>
+    <body class="{% block body_class %}{% endblock %}">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKZ8BL9"
+                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <!-- Footer -->
+        {% block nav %}
+            {{ include('page/nav.twig') }}
+        {% endblock %}
+
+        <!-- Messages -->
+        {% for message in messages.flushMessages %}
+            <div class="alert alert-{{ message['type']|escape }} alert-dismissible fade show" role="alert">
+                {{ message['message']|escape }}
+            </div>
+        {% endfor %}
+
+        <!-- Content -->
+        {% block content %}{% endblock %}
+
+        <!-- Footer -->
+        {% block footer %}
+            {{ include('page/footer.twig') }}
+        {% endblock %}
+
+        <!-- Js scripts -->
+        <script src="{{ asset_url('js/lib/jquery-3.3.1.min.js') }}"></script>
+        <script src="{{ asset_url('js/lib/popper.min.js') }}"></script>
+        <script src="{{ asset_url('js/lib/bootstrap.min.js') }}"></script>
+        <script src=" {{ asset_url('js/lib/jquery.validate.min.js') }}"></script>
+        <script src=" {{ asset_url('js/core.js?v2.0.0') }}"></script>
+    </body>
+</html>

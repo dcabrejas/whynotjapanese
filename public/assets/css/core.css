@@ -1,0 +1,40 @@
+/* General Styles */
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+/** Utilities */
+.py-6 {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+}
+
+.pt-6 {
+    padding-top: 6rem !important;
+}
+
+/** Header */
+header {
+    background-size: cover;
+    background: url('../img/header-background-desktop.jpg')  no-repeat top center fixed;
+}
+
+header div.content {
+    background-color: #ffffff77;
+}
+
+@media (min-width:480px) and (max-width: 899px) {
+    /* Tablet */
+    header {
+        height: 100%;
+        background-image: url('../img/header-background-tablet.jpg');
+    }
+}
+
+@media (max-width:479px) {
+    /* Mobile */
+    header {
+        background-image: url('../img/header-background-mobile.jpg');
+    }
+}

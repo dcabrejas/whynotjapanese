@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+    <a class="navbar-brand" href="{{ path_for('home') }}">
+        <img src="{{ asset_url('img/main-logo.png') }}" height="50" class="d-inline-block align-top" alt="Home">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#">Top</a>
+            <a class="nav-item nav-link" href="{{ (is_current_path('home')) ? '' : base_url() }}#lessons">Lessons</a>
+            <a class="nav-item nav-link" href="{{ (is_current_path('home')) ? '' : base_url() }}#about">About me</a>
+            {#<a class="nav-item nav-link" href="#reviews">Student's voice</a>#}
+            {#<a class="nav-item nav-link" href="{{ path_for('blog') }}">Blog</a>#}
+            <a class="nav-item nav-link" href="{{ (is_current_path('home')) ? '' : base_url() }}#contact">Contact</a>
+            <a class="nav-item nav-link" href="{{ path_for('terms') }}">Terms</a>
+        </div>
+    </div>
+</nav>

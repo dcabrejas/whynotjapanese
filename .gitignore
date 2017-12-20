@@ -1,0 +1,10 @@
+/vendor/
+/logs/*
+!/logs/README.md
+.idea
+.docker
+/php_errors.log
+/cache
+/public/assets/img
+/src/settings.php
+GeoLite2-City.mmdb
