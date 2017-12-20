@@ -162,7 +162,7 @@ header p.japanese{
 @media (max-width:479px)  {
     header {
         background-image: url('../img/top-banner-tablet.jpg');
-        background-size: cover;
+        background-size: 100%;
     }
 
     header p.english{
