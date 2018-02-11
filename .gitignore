@@ -2,3 +2,5 @@
 /logs/*
 !/logs/README.md
 .idea
+.docker
+php_errors.log

@@ -1,0 +1,30 @@
+<footer class="container-fluid bg-light">
+    <div class="row p-4">
+        <div class="col-12 col-md">
+            <img class="logo" src="{{ asset_url('img/square-logo.png') }}" alt="Learn Japanese" height="40px"/>
+            <small class="d-block mb-3 text-muted">&#169; 2017-2018</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="{{ path_for('terms') }}">Terms &amp; Conditions</a></li>
+                {#<li><a class="text-muted" href="{{ path_for('blog') }}">Blog</a></li>#}
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="{{ google_maps_url() }}" target="_blank">Location</a></li>
+                <li><a class="text-muted" href="{{ (is_current_path('home')) ? '' : base_url() }}#contact">Contact</a></li>
+                <li><a class="text-muted" href="{{ (is_current_path('home')) ? '' : base_url() }}#about">About me</a></li>
+                {#<li><a class="text-muted" href="{{ base_url() }}" target="_blank">Student's voice</a></li>#}
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Social</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="{{ twitter_url() }}">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>

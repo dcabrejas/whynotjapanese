@@ -1,0 +1,224 @@
+{% extends "page/skeleton.twig" %}
+
+{% block meta_description %}I am Maki Cabrejas, I teach Japanese in Nottingham, United Kingdom or Online via Skype, I also teach Japanese language for Nursing professionals, Learn how to speak Japanese{% endblock %}
+{% block title %}Homepage{% endblock %}
+
+{% block content %}
+    <header class="container-fluid py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10 content rounded m-5 p-3 text-center">
+                <h1>Japanese Teacher</h1>
+                <h2 class="mb-4">Maki Cabrejas</h2>
+                <p>Learn Japanese via one on one lessons on Skype worldwide or face to face if you are <br>in Nottingham, UK.</p>
+                <p>スカイプを使っていつでもどこでも日本語のレッスンが受けられます。</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="lessons" class="container-fluid text-center py-6">
+        <h2 class="mb-4">How would you like to learn Japanese ?</h2>
+        <p>What does "learning Japanese" mean for you?<br>
+            Let me know your ideas and goals.<br>
+            Working together, lessons comply perfectly with you.</p>
+
+        <div class="row mt-5">
+            <div class="col-md">
+                <div class="card border-0">
+                    <img class="card-img-top mx-auto" style="width: 80px;" src="{{ asset_url('img/skype-icon.png') }}" alt="Learn Japanese Online">
+                    <div class="card-body">
+                        <h5 class="card-title">Online</h5>
+                        <p class="card-text" style="height: 90px;">Enjoy learning Japanese from the comfort of your home via Skype</p>
+                        <a href="#" class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#OnlineModelContent">View tuition fees</a>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="OnlineModelContent" tabindex="-1" role="dialog" aria-labelledby="OnlineModelTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="OnlineModelTitle">Online Tuition Fees</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="tuition-fees text-left">
+                                            <ul>
+                                                <li>7 am to 10 pm (GMT) - &pound;20/hr</li>
+                                                <li>7 am to 10 pm (GMT) - &pound;5/ 15mins</li>
+                                                <li>Important to diligently and stacking !</li>
+                                            </ul>
+                                            <p>This includes lesson preparation time, all worksheets plus marking of activities completed between lessons as well as any extra advice between lessons.</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm" data-dismiss="modal">Close</button>
+                                        <a href="{{ path_for('terms') }}#online" class="btn btn-outline-info btn-sm">View Terms and Conditions</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- Modal -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card border-0">
+                    <img class="card-img-top mx-auto" style="width: 80px;" src=" {{ asset_url('img/one-to-one-icon.png') }}" alt="Learn Japanese Face to Face in Nottingham, United Kingdom">
+                    <div class="card-body">
+                        <h5 class="card-title">Face to Face</h5>
+                        <p class="card-text" style="height: 90px;">One on one class<br>In Nottingham city centre</p>
+                        <a href="#" class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#FaceModalContent">View tuition fees</a>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="FaceModalContent" tabindex="-1" role="dialog" aria-labelledby="FaceModalTitel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="FaceModalTitel">Face to Face Tuition Fees</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="tuition-fees text-left">
+                                            <ul>
+                                                <li>7 am to 10 pm (GMT) - &pound;20/hr</li>
+                                                <li>7 am to 10 pm (GMT) - &pound;5/ 15mins</li>
+                                                <li>Important to diligently and stacking !</li>
+                                            </ul>
+                                            <p>This includes lesson preparation time, all worksheets plus marking of activities completed between lessons as well as any extra advice between lessons.<br>
+                                                Two-to-one and three-to-one lessons are discounted.</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm" data-dismiss="modal">Close</button>
+                                        <a href="{{ path_for('terms') }}#face-to-face" class="btn btn-outline-info btn-sm">View Terms and Conditions</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- Modal -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card border-0">
+                    <img class="card-img-top mx-auto" style="width: 80px;" src="{{ asset_url('img/medicine-icon.png') }}" alt="Learn Japanese for nursing professionals">
+                    <div class="card-body">
+                        <h5 class="card-title">Medical Japanese</h5>
+                        <p class="card-text" style="height: 90px;">看護や介護の現場で使える日本語<br>Learn Japanese for nursing professionals Via Skype or Face to Face</p>
+                        <a href="#" class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#MedicalModalContent">View tuition fees</a>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="MedicalModalContent" tabindex="-1" role="dialog" aria-labelledby="MedicalModalTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="MedicalModalTitle">Face to Face Tuition Fees</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="tuition-fees text-left">
+                                            <ul>
+                                                <li>7 am to 10 pm (GMT) - &pound;25/hr</li>
+                                            </ul>
+                                            <p>This includes lesson preparation time, all worksheets plus marking of activities completed between lessons as well as any extra advice between lessons.</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm" data-dismiss="modal">Close</button>
+                                        <a href="{{ path_for('terms') }}"class="btn btn-outline-info btn-sm">View Terms and Conditions</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- Modal -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary of me -->
+    <section id="about" class="container-fluid bg-light px-5 py-6">
+        <div class="media d-lg-flex d-none mx-auto" style="max-width: 85%">
+            <img class="mr-3 rounded" src="{{ asset_url('img/protrait-maki.jpg') }}" height="300px" alt="Generic placeholder image">
+            <div class="media-body">
+                <h2 class="mt-0 pt-0 pb-4">Hello, I am a Japanese Teacher and my name is <b>Maki.</b></h2>
+                <p>
+                    I have completed a Postgraduate Certificate in Teaching Japanese as a Foreign Language from the International Institute of Education in London and am looking for private individual or small groups of students.
+                    <br><br>
+                    I help people of all ages and abilities learn Japanese for exams, holidays or business. Learning another language is such a worthwhile thing to do and can open up many doors. I find my work enjoyable and very rewarding.
+                </p>
+                <div class="text-center">
+                    <a href="{{ twitter_url() }}" target="_blank" alt="Learn Japanese, Why Not Japanese, Twitter">
+                        <img class="twitter mt-4" src="{{ asset_url('img/twitter.png') }}" alt="Twitter" style="height: 30px">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-lg-none text-center">
+            <div class="col-12">
+                <img class="rounded mx-auto d-block pb-5" height="300px" src="/assets/img/protrait-maki.jpg" alt="Maki Cabrejas, Japanese Teacher, Skype or Nottingham, United Kingdom" />
+            </div>
+
+            <div class="col-12">
+                <h2 class="pb-4">Hello, I am a Japanese Teacher and my name is <b>Maki.</b></h2>
+                <p>
+                    I have completed a Postgraduate Certificate in Teaching Japanese as a Foreign Language from the International Institute of Education in London and am looking for private individual or small groups of students.
+                    <br><br>
+                    I help people of all ages and abilities learn Japanese for exams, holidays or business. Learning another language is such a worthwhile thing to do and can open up many doors. I find my work enjoyable and very rewarding.
+                </p>
+
+                <div class="text-md-center pt-4">
+                    <a href="{{ twitter_url() }}" target="_blank" alt="Learn Japanese, Why Not Japanese, Twitter">
+                        <img class="twitter" src="{{ asset_url('img/twitter.png') }}" alt="Twitter" style="height: 30px">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get in touch -->
+    <section id="contact" class="container-fluid px-md-5 pt-6 pb-5">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h2 class="text-center pb-4">Get in Touch</h2>
+                <form method="post" action="{{ path_for('contact') }}" class="get-in-touch">
+                <input type="hidden" name="{{ nameKey }}" value="{{ name }}">
+                <input type="hidden" name="{{ valueKey }}" value="{{  value }}">
+                <div class="form-group has-danger">
+                    <label class="form-control-label" for="firstname">First name (required)</label>
+                    <input class="form-control form-control-danger" name="firstname" maxlength="50" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="lastname">Last name (required)</label>
+                    <input class="form-control" name="lastname" maxlength="50" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="email">Email (required)</label>
+                    <input class="form-control" name="email" type="email" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="subject">Subject (required)</label>
+                    <input class="form-control" name="subject" maxlength="100" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="level">Japanese Level (required)</label>
+                    <select class="form-control" name="level">
+                        <option value="Complete Beginner">Complete Beginner</option>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advance">Advance</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="message">Your Message (required)</label>
+                    <textarea class="form-control" rows="8" id="message" name="message" required></textarea>
+                </div>
+                <input class="btn btn-outline-primary btn-block" type="submit" value="Submit" id="input-submit">
+            </form>
+            </div>
+        </div>
+    </section>
+{% endblock %}
