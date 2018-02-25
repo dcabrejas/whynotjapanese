@@ -5,7 +5,7 @@ $(document).ready(function() {
             $(element).addClass('is-invalid');
         },
         unhighlight: function(element) {
-            $(element).addClass('is-invalid');
+            $(element).removeClass('is-invalid');
         },
         errorElement: 'div',
         errorClass: 'invalid-feedback',
