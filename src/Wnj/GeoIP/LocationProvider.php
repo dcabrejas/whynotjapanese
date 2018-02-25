@@ -30,11 +30,14 @@ class LocationProvider
         $this->logger = $logger;
     }
 
-    public function getRequestCityLocation() : ?City
+    /**
+     * @return City|null
+     */
+    public function getRequestCityLocation()
     {
         try {
             $reader = new Reader(__DIR__ . '/../../../GeoLite2-City.mmdb');
-        } catch (InvalidDatabaseException | \Exception $e) {
+        } catch (\Exception $e) {
             $this->logger->addWarning("Could not open location database");
             return null;
         }
@@ -42,7 +45,7 @@ class LocationProvider
         try {
             $ipAddress = $this->request->getAttribute('ip_address');
             $record = $reader->city($ipAddress);
-        } catch (AddressNotFoundException | \InvalidArgumentException | \Exception $e) {
+        } catch (\Exception $e) {
             $this->logger->addWarning("Could not find location address", ['ip' => $ipAddress]);
             return null;
         }
