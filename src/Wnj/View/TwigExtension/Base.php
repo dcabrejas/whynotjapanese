@@ -34,6 +34,7 @@ class Base extends \Twig_Extension
     {
         return [
             new \Twig_SimpleFunction('twitter_url', array($this, 'getTwitterUrl')),
+            new \Twig_SimpleFunction('instagram_url', array($this, 'getInstagramUrl')),
             new \Twig_SimpleFunction('google_maps_url', array($this, 'getGoogleMapsUrl')),
             new \Twig_SimpleFunction('asset_url', array($this, 'getAssetUrl'))
         ];
@@ -42,6 +43,11 @@ class Base extends \Twig_Extension
     public function getTwitterUrl() : string
     {
         return $this->settings['links']['twitter_url'] ?? '';
+    }
+
+    public function getInstagramUrl() : string
+    {
+        return $this->settings['links']['instagram_url'] ?? '';
     }
 
     public function getGoogleMapsUrl() : string

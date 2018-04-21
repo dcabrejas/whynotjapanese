@@ -64,5 +64,12 @@ task('settings:copy', function () {
     writeln("settings copied");
 });
 
+task('remove:cache', function () {
+    cd('{{release_path}}');
+    run('rm -rf cache');
+    writeln("Cache cleared");
+});
+
 after('deploy:vendors', 'composer:install');
 after('deploy:clear_paths', 'settings:copy');
+after('cleanup', 'remove:cache');
