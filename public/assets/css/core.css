@@ -14,6 +14,14 @@
     padding-top: 6rem !important;
 }
 
+.pb-6 {
+    padding-bottom: : 6rem !important;
+}
+
+.red {
+  color: #fc6c55;
+}
+
 /** Header */
 header {
     background-size: cover;

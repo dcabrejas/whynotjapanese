@@ -16,26 +16,23 @@
     </header>
 
     <section id="lessons" class="container-fluid text-center py-6">
-        <h2 class="mb-4">How would you like to learn Japanese ?</h2>
-        <p>What does "learning Japanese" mean for you?<br>
-            Let me know your ideas and goals.<br>
-            Working together, lessons comply perfectly with you.</p>
-
+        <h2 class="mb-4">What kind of lesson would you like to take?</h2>
+        <p>Let me know your ideas and goals, Lessons are tailored personally for you</p>
         <div class="row mt-5">
             <div class="col-md">
                 <div class="card border-0">
-                    <img class="card-img-top mx-auto" style="width: 80px;" src="{{ asset_url('img/skype-icon.png') }}" alt="Learn Japanese Online">
+                    <img class="card-img-top mx-auto" style="width: 172px;" src=" {{ asset_url('img/jlpt.png') }}" alt="Prepare for JLPT">
                     <div class="card-body">
-                        <h5 class="card-title">Online</h5>
-                        <p class="card-text" style="height: 90px;">Enjoy learning Japanese from the comfort of your home via Skype</p>
-                        <a href="#" class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#OnlineModelContent">View tuition fees</a>
+                        <h5 class="card-title">Japanese-Language Proficency Test</h5>
+                        <p class="card-text" style="height: 90px;">Advance your career by earning a world-wide recognized exam</p>
+                        <a href="#" class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#FaceModalContent">View tuition fees</a>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="OnlineModelContent" tabindex="-1" role="dialog" aria-labelledby="OnlineModelTitle" aria-hidden="true">
+                        <div class="modal fade" id="FaceModalContent" tabindex="-1" role="dialog" aria-labelledby="FaceModalTitel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="OnlineModelTitle">Online Tuition Fees</h5>
+                                        <h5 class="modal-title" id="FaceModalTitel">JLPT Tuition Fees</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -43,14 +40,14 @@
                                     <div class="modal-body">
                                         <div class="tuition-fees text-left">
                                             <ul>
-                                                <li>7 am to 10 pm (GMT) - &pound;25/hr</li>
+                                                <li>7 am to 9 pm (GMT) - &pound;30/hr</li>
                                             </ul>
                                             <p>This includes lesson preparation time, all worksheets plus marking of activities completed between lessons as well as any extra advice between lessons.</p>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-outline-secondary btn-sm" data-dismiss="modal">Close</button>
-                                        <a href="{{ path_for('terms') }}#online" class="btn btn-outline-info btn-sm">View Terms and Conditions</a>
+                                        <a href="{{ path_for('terms') }}#jlpt" class="btn btn-outline-info btn-sm">View Terms and Conditions</a>
                                     </div>
                                 </div>
                             </div>
@@ -60,18 +57,18 @@
             </div>
             <div class="col-md">
                 <div class="card border-0">
-                    <img class="card-img-top mx-auto" style="width: 80px;" src=" {{ asset_url('img/one-to-one-icon.png') }}" alt="Learn Japanese Face to Face in Nottingham, United Kingdom">
+                    <img class="card-img-top mx-auto" style="width: 80px;" src="{{ asset_url('img/cherry-blossom.png') }}" alt="Learn General Japanese">
                     <div class="card-body">
-                        <h5 class="card-title">Face to Face</h5>
-                        <p class="card-text" style="height: 90px;">One on one class<br>In Nottingham city centre</p>
-                        <a href="#" class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#FaceModalContent">View tuition fees</a>
+                        <h5 class="card-title">General Japanese</h5>
+                        <p class="card-text" style="height: 90px;">All levels welcome</p>
+                        <a href="#" class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#OnlineModelContent">View tuition fees</a>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="FaceModalContent" tabindex="-1" role="dialog" aria-labelledby="FaceModalTitel" aria-hidden="true">
+                        <div class="modal fade" id="OnlineModelContent" tabindex="-1" role="dialog" aria-labelledby="OnlineModelTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="FaceModalTitel">Face to Face Tuition Fees</h5>
+                                        <h5 class="modal-title" id="OnlineModelTitle">General Japanse Tuition Fees</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -79,15 +76,14 @@
                                     <div class="modal-body">
                                         <div class="tuition-fees text-left">
                                             <ul>
-                                                <li>7 am to 10 pm (GMT) - &pound;25/hr</li>
+                                                <li>7 am to 9 pm (GMT) - &pound;25/hr</li>
                                             </ul>
-                                            <p>This includes lesson preparation time, all worksheets plus marking of activities completed between lessons as well as any extra advice between lessons.<br>
-                                                Two-to-one and three-to-one lessons are discounted.</p>
+                                            <p>This includes lesson preparation time, all worksheets plus marking of activities completed between lessons as well as any extra advice between lessons.</p>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-outline-secondary btn-sm" data-dismiss="modal">Close</button>
-                                        <a href="{{ path_for('terms') }}#face-to-face" class="btn btn-outline-info btn-sm">View Terms and Conditions</a>
+                                        <a href="{{ path_for('terms') }}#general" class="btn btn-outline-info btn-sm">View Terms and Conditions</a>
                                     </div>
                                 </div>
                             </div>
@@ -108,22 +104,22 @@
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="MedicalModalTitle">Face to Face Tuition Fees</h5>
+                                        <h5 class="modal-title" id="MedicalModalTitle">Medical Japanese Tuition Fees</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
+                                            <sfpan aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
                                     <div class="modal-body">
                                         <div class="tuition-fees text-left">
                                             <ul>
-                                                <li>7 am to 10 pm (GMT) - &pound;30/hr</li>
+                                                <li>7 am to 9 pm (GMT) - &pound;30/hr</li>
                                             </ul>
                                             <p>This includes lesson preparation time, all worksheets plus marking of activities completed between lessons as well as any extra advice between lessons.</p>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-outline-secondary btn-sm" data-dismiss="modal">Close</button>
-                                        <a href="{{ path_for('terms') }}"class="btn btn-outline-info btn-sm">View Terms and Conditions</a>
+                                        <a href="{{ path_for('terms') }}#medical"class="btn btn-outline-info btn-sm">View Terms and Conditions</a>
                                     </div>
                                 </div>
                             </div>
@@ -134,8 +130,32 @@
         </div>
     </section>
 
+    <section id="class-type" class="container-fluid bg-light text-center py-6">
+        <h2 class="mb-4">How to take lessons</h2>
+        <p>Enjoy learning Japanese from the comfort of your home via Skype, or face to face in Nottingham city centre</p>
+
+            <div class="row mt-5 justify-content-md-center">
+              <div class="col-md-2">
+                  <div class="card border-0 bg-light">
+                      <img class="card-img-top mx-auto" style="width: 80px;" src="{{ asset_url('img/skype-icon.png') }}" alt="Learn Japanese Online">
+                      <div class="card-body">
+                          <h5 class="card-title">Online</h5>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-2">
+                  <div class="card border-0 bg-light">
+                      <img class="card-img-top mx-auto" style="width: 80px;" src=" {{ asset_url('img/one-to-one-icon.png') }}" alt="Learn Japanese Face to Face in Nottingham, United Kingdom">
+                      <div class="card-body">
+                        <h5 class="card-title">Face to Face</h5>
+                      </div>
+                  </div>
+              </div>
+            </div>
+      </section>
+
     <!-- Summary of me -->
-    <section id="about" class="container-fluid bg-light px-5 py-6">
+    <section id="about" class="container-fluid px-5 py-6">
         <div class="media d-lg-flex d-none mx-auto" style="max-width: 85%">
             <img class="mr-3 rounded" src="{{ asset_url('img/protrait-maki.jpg') }}" height="300px" alt="Generic placeholder image">
             <div class="media-body">
@@ -179,6 +199,55 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Students voice -->
+    <section id="students-voice" class="container-fluid bg-light text-center py-6">
+      <h2 class="mb-4">Students voice</h2>
+      <div class="students-voice-carousel carousel">
+        <div class="carousel-cell">
+          <div class="card bg-light">
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p><span class="red">&quot;</span>Maki is a fantastic teacher. Her lessons are varied & interesting, set at the perfect learning levels. She consistantly makes sure the students understand the content & has a variety of teaching techniques. She is really patient and also happy to take the time to talk about Japanese culture & practises which I feel is also really important, especially for my children. Best language lessons ever. Highly recommend.<span class="red">&quot;</span></p>
+                <footer class="blockquote-footer">Maria, 40 year old</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="card bg-light">
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p><span class="red">&quot;</span>Maki offers fantastic tuition . I've learned so much in such a short pariod of time and will continue my sessions until I'm completely fluent. One point to note, It's all well and good being able to speak Japanese and be qualified in teaching it, however, wouldn't you prefer learning from somebody who's a native of Japan? Wouldn't you want to make sure what you're being taught is 100% correct? Need I say more?<span class="red">&quot;</span></p>
+                <footer class="blockquote-footer">Rick <cite title="Source Title">20 years old, Public officer</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="card bg-light">
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <br>
+                <p><span class="red">&quot;</span>Maki is an excellent tutor! She is very patient and encouraging helping you learn every step of the way.<span class="red">&quot;</span></p>
+                <footer class="blockquote-footer">George <cite title="Source Title">28 years old, Photographer</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="card bg-light">
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <br>
+                <p><span class="red">&quot;</span>Maki has a great knowledge of the language, all aspects of Japanese are well explained & put into context whih I think is very good, another thing I like is that she teaches at a good speed. It's very easy to learn with her & I found it enjoyable to do so too!<span class="red">&quot;</span></p>
+                <footer class="blockquote-footer">Harry <cite title="Source Title">20 years old, University Student</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Get in touch -->
