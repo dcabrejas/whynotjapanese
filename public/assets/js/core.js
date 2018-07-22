@@ -19,15 +19,25 @@ $(document).ready(function() {
     //messages
     $('div.alert').delay(2000).fadeOut(2500);
 
+    //Students voice carousel
+    $('.students-voice-carousel').flickity({
+      cellAlign: 'center',
+      contain: true,
+      wrapAround: true,
+      autoPlay: 5000,
+      adaptiveHeight: true
+    });
+
     //terms and conditions
     switch (window.location.hash) {
-        case '#online':
-            $('body.terms-and-conditions #v-pills-online-tab').tab('show');
+        case '#general':
+            $('body.terms-and-conditions #v-pills-general-tab').tab('show');
             break;
-        case '#face-to-face':
-            $('body.terms-and-conditions #v-pills-face-to-face-tab').tab('show');
+        case '#jlpt':
+            $('body.terms-and-conditions #v-pills-jlpt-tab').tab('show');
+            break;
+        case '#medical':
+            $('body.terms-and-conditions #v-pills-medical-tab').tab('show');
+            break;
     }
 });
-
-
-
